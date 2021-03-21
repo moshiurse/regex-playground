@@ -16,5 +16,5 @@
 {
   let regex = /[yo]/gi; // makes the expression case in sensitive
   let str = "YOu";
-  console.log(str.match(regex))  //Output: ['Y', 'o', 'u']
+  console.log(str.match(regex))  //Output: ['Y', 'O']
 }
