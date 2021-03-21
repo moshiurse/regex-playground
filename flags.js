@@ -12,3 +12,9 @@
   let str = "You";
   console.log(str.match(regex))  //Output: [ 'Y', index: 0, input: 'You', groups: undefined ]
 }
+
+{
+  let regex = /[yo]/gi; // makes the expression case in sensitive
+  let str = "YOu";
+  console.log(str.match(regex))  //Output: ['Y', 'o', 'u']
+}
