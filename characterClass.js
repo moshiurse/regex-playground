@@ -24,3 +24,9 @@
   //Output: ['T', 'h', 'e', ' ', 's', 'i', 'd',
   // 'e', ' ', 'b', 'a', 'r']
 }
+
+{
+  let regex = /[a-g]/gi; // Matches a character having a character code between the two specified characters inclusive.
+  let str = "The side bar";
+  console.log(str.match(regex))  //Output: [ 'e', 'd', 'e', 'b', 'a' ]
+}
