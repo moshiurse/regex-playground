@@ -30,3 +30,11 @@
   let str = "The side bar";
   console.log(str.match(regex))  //Output: [ 'e', 'd', 'e', 'b', 'a' ]
 }
+
+{
+  let regex = /[\s\S]/gi; 
+  // can be used to match any character, including line breaks, without the dotall flag between the two specified characters inclusive.
+  let str = "The side";
+  console.log(str.match(regex)) 
+  //Output: ['T', 'h', 'e', ' ', 's', 'i', 'd', 'e']
+}
