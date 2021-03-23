@@ -38,3 +38,27 @@
   console.log(str.match(regex)) 
   //Output: ['T', 'h', 'e', ' ', 's', 'i', 'd', 'e']
 }
+\
+{
+  let regex = /[\w]/g; //Matches any word character (alphanumeric & underscore). Only matches low-ascii characters (no accented or non-roman characters)
+  let str = "The side";
+  console.log(str.match(regex))  //Output: ['T', 'h', 'e','s', 'i', 'd','e']
+} 
+
+{
+  let regex = /[\W]/g; // Matches any character that is not a word character (alphanumeric & underscore). Equivalent to [^A-Za-z0-9_]
+  let str = "The )side";
+  console.log(str.match(regex))  //Output: [ ' ', ')' ]
+} 
+
+{
+  let regex = /[\d]/g; // Matches any digit character (0-9). Equivalent to [0-9].
+  let str = "+88-(018)-666-888";
+  console.log(str.match(regex))  //Output: ['8', '8', '0', '1','8', '8', '8', '8','8', '8', '8']
+} 
+
+{
+  let regex = /[\D]/g; //Matches any digit character (0-9). Equivalent to [0-9].
+  let str = "+88-(018)-666-888";
+  console.log(str.match(regex))  //Output: [ '+', '-', '(', ')', '-', '-' ]
+} 
