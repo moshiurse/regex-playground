@@ -62,3 +62,15 @@
   let str = "+88-(018)-666-888";
   console.log(str.match(regex))  //Output: [ '+', '-', '(', ')', '-', '-' ]
 } 
+
+{
+  let regex = /[\s]/g; // Matches any whitespace character (spaces, tabs, line breaks).
+  let str = "The side bar";
+  console.log(str.match(regex))  //Output: [ ' ', ' ' ]
+} 
+
+{
+  let regex = /[\S]/g; // Matches any character that is not a whitespace character (spaces, tabs, line breaks).
+  let str = "The side";
+  console.log(str.match(regex))  //Output: ['T', 'h', 'e','s', 'i', 'd','e']
+} 
